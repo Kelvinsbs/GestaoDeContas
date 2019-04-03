@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+	label.nomes {
+		display: inline-block;
+		width: 70px;
+		text-align: right;
+	}
+</style>
+<script src="JS/script.js"></script>
+</head>
+<body>
+	<div style="width: 400px; height: 550px; margin-left: 36%; margin-top: 5%;">
+		<form method="post" action="">
+			<fieldset style="background-color: #F6F6F6">
+				<legend>Formulario</legend>
+				
+                <label for="nome" class="nomes">Nome:</label>
+				<input type="text" name="nome" id="nome" >
+				<br><br>
+				
+				<label for="tConta">Tipo de Conta:</label>
+				<input type="radio" id="tContaF" name="tConta" value="pFisica" onclick="trocaPessoa('pFisica')">Pessoa Fisíca
+				<input type="radio" id="tContaJ" name="tConta" value="pJuridica" onclick="trocaPessoa('pJuridica')">Pessoa Juridica
+				<br><br>
+                
+				<fieldset style="background-color: #E3E3E3">
+					<legend>Pessoa Física</legend>
+					 <label for="cpf">CPF:</label>
+					<input type="text" name="cpf" id="cpf" >
+					<br><br>
+				</fieldset>
+				
+				<fieldset style="background-color: #A3A3A3">
+					<legend>Pessoa Física</legend>
+					<label for="cnpj">CNPJ:</label>
+					<input type="text" name="cnpj" id="cnpj" >
+					<br><br>
+				</fieldset>
+				<br><br>
+                <label for="agencia" class="nomes">Agência:</label>
+				<input type="text" name="agencia" id="agencia" >
+				<br><br>
+                
+                <label for="conta" class="nomes">Conta:</label>
+				<input type="text" name="conta" id="conta" >
+				<br><br>
+                
+                <label for="digito" class="nomes">Dígito:</label>
+				<input type="text" name="digito" id="digito" >
+				<br><br>
+				
+                <label for="tConta">Tipo Transação:</label>
+				<input type="radio" id="saque" name="saque" value="saque">Saque
+				<input type="radio" id="depositar" name="depositar" value="depositar">Depositar
+				<br><br>
+                
+                <label for="saque" class="nomes">Valor:</label>
+				<input type="text" name="Valor" id="Valor" >
+				<br><br>
+				
+				<input type="submit" name="submit" value="Enviar">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
